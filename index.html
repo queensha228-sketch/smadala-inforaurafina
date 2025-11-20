@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase - Konselor Sekolah Virtual</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>MindEase 💬</h1>
+            <nav>
+                <a href="#chat">Chat</a>
+                <a href="#motivasi">Motivasi</a>
+                <a href="#artikel">Artikel</a>
+                <a href="#journal">Journaling</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="chat" class="card active">
+            <h2>Konseling Kilat ⚡️</h2>
+            <div class="chat-window">
+                <div class="message ai-message">Halo! Aku MindEase. Cerita aja, aku siap dengerin tanpa nge-judge. Lagi *overthinking* soal apa nih?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Tulis curhatan atau pertanyaanmu di sini...">
+                <button onclick="sendMessage()">Kirim</button>
+            </div>
+        </section>
+        
+        <section id="motivasi" class="card">
+            <h2>Motivasi Harian ✨</h2>
+            <p class="quote-text" id="dailyMotivation">Tekan tombol di bawah buat dapet suntikan semangat hari ini!</p>
+            <button onclick="getMotivation()">Dapatkan Motivasi</button>
+        </section>
+
+        <section id="artikel" class="card coming-soon">
+            <h2>Artikel Singkat 📚</h2>
+            <p>Memuat artikel...</p> 
+        </section>
+        
+        <section id="journal" class="card coming-soon">
+            <h2>Journaling 📝</h2>
+            <p>Memuat fitur journaling...</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MindEase. Your safe space.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
